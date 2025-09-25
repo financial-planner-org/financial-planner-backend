@@ -7,10 +7,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src"]
-}
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -30,16 +27,12 @@
       "./node_modules/@types",
       "./src/types"
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "baseUrl": "."
+    }
   },
-  "include": [
-    "src/**/*",
-    "tests/**/*",
-    "jest.config.ts"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "dist",

@@ -1,29 +1,41 @@
+// Importa o Fastify e o provedor de tipos Zod
 import Fastify from 'fastify';
 import { ZodTypeProvider } from 'fastify-type-provider-zod';
 import swaggerPlugin from './plugins/swagger';
 import healthRoute from './routes/health';
+import simulationsRoute from './routes/simulations';
 
+// Função que constrói e configura o servidor
 export async function buildServer() {
-	// cria app com suporte a Zod como type provider
-	const app = Fastify({ logger: true }).withTypeProvider<ZodTypeProvider>();
+    // Cria uma instância do Fastify com logger ativado
+    // e configura o Zod como provedor de tipos
+    const app = Fastify({ 
+        logger: true 
+    }).withTypeProvider<ZodTypeProvider>();
 
-	// registra plugins/rotas
-	await app.register(swaggerPlugin);
-	await app.register(healthRoute); // prefix definido na própria rota se desejado
+    // Registra os plugins (como o Swagger)
+    await app.register(swaggerPlugin);
+    
+    // Registra as rotas
+    await app.register(healthRoute, { prefix: '/api' });
+    await app.register(simulationsRoute, { prefix: '/api' });
 
-	return app;
+    return app;
 }
 
+// Se este arquivo for executado diretamente (não importado)
 if (require.main === module) {
-	(async () => {
-		const app = await buildServer();
-		try {
-			const port = Number(process.env.PORT) || 3001;
-			await app.listen({ port, host: '0.0.0.0' });
-			app.log.info(`Server listening on http://0.0.0.0:${port}`);
-		} catch (err) {
-			app.log.error(err);
-			process.exit(1);
-		}
-	})();
+    (async () => {
+        const app = await buildServer();
+        try {
+            // Define a porta a partir da variável de ambiente ou usa 3001 como padrão
+            const port = Number(process.env.PORT) || 3001;
+            // Inicia o servidor
+            await app.listen({ port, host: '0.0.0.0' });
+            console.log(`Servidor rodando em http://localhost:${port}`);
+        } catch (err) {
+            console.error(err);
+            process.exit(1);
+        }
+    })();
 }

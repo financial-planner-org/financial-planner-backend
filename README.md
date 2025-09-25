@@ -37,19 +37,64 @@ Backend para o sistema de planejamento financeiro, construído com Node.js, Fast
 ```
 src/
 ├── config/         # Configurações do aplicativo
-├── controllers/    # Controladores da aplicação
-├── errors/         # Classes de erro personalizadas
-├── interfaces/     # Interfaces TypeScript
-├── middlewares/    # Middlewares do Fastify
-├── plugins/        # Plugins do Fastify
-├── repositories/   # Camada de acesso a dados
+├── plugins/        # Plugins do Fastify (Swagger, etc.)
 ├── routes/         # Definições de rotas
-├── schemas/        # Esquemas de validação com Zod
+│   ├── health.ts   # Rota de verificação de saúde
+│   └── simulations.ts # Rotas de simulações
 ├── services/       # Lógica de negócios
-├── types/          # Tipos TypeScript
-└── utils/          # Utilitários
+│   └── simulation.service.ts # Serviço de simulações
+└── server.ts       # Ponto de entrada da aplicação
 ```
 
+## 🌐 Rotas da API
+
+### Saúde
+- `GET /api/health` - Verifica se a API está funcionando
+  - Resposta: `{ "status": "ok" }`
+
+### Simulações
+- `POST /api/simulations` - Cria uma nova simulação
+  - Corpo da requisição:
+    ```json
+    {
+      "name": "Minha Simulação",
+      "initialAmount": 1000,
+      "monthlyContribution": 100,
+      "months": 12,
+      "annualInterestRate": 0.1
+    }
+    ```
+  - Validação: Todos os campos são obrigatórios e devem seguir as regras de validação
+
+- `GET /api/simulations/:id` - Obtém uma simulação pelo ID
+  - Parâmetros de URL: `id` (string)
+  - Resposta: Detalhes da simulação
+
+## 📚 Documentação da API
+
+Acesse a documentação interativa da API em:
+http://localhost:3001/documentation
+
+## 🧪 Testando a API
+
+### Usando cURL
+
+1. Verifique a saúde da API:
+   ```bash
+   curl http://localhost:3001/api/health
+   ```
+
+2. Crie uma nova simulação:
+   ```bash
+   curl -X POST http://localhost:3001/api/simulations \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Minha Simulação", "initialAmount": 1000, "monthlyContribution": 100, "months": 12, "annualInterestRate": 0.1}'
+   ```
+
+3. Obtenha uma simulação pelo ID (substitua `:id` pelo ID retornado na criação):
+   ```bash
+   curl http://localhost:3001/api/simulations/:id
+   ```
 ## 🧪 Testes
 
 ```bash
@@ -72,9 +117,6 @@ NODE_ENV=development
 PORT=3000
 ```
 
-## 📝 Documentação da API
-
-A documentação da API está disponível em `/documentation` quando o servidor estiver em execução.
 
 ## 🤝 Contribuição
 
