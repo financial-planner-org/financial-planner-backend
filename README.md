@@ -28,6 +28,8 @@ Backend para o sistema de planejamento financeiro, construído com Node.js, Fast
 - **Node.js** - Ambiente de execução JavaScript
 - **Fastify** - Framework web rápido e de baixo custo
 - **TypeScript** - Superset tipado do JavaScript
+- **Prisma** - ORM para Node.js e TypeScript
+- **PostgreSQL** - Banco de dados relacional
 - **Zod** - Validação de esquema
 - **Jest** - Testes unitários e de integração
 - **ESLint** & **Prettier** - Linting e formatação de código
@@ -37,7 +39,12 @@ Backend para o sistema de planejamento financeiro, construído com Node.js, Fast
 ```
 src/
 ├── config/         # Configurações do aplicativo
+├── database/       # Configurações e modelos do banco de dados
+│   └── prisma.service.ts  # Cliente Prisma
 ├── plugins/        # Plugins do Fastify (Swagger, etc.)
+├── prisma/         # Configurações do Prisma
+│   ├── migrations/ # Migrações do banco de dados
+│   └── schema.prisma # Schema do banco de dados
 ├── routes/         # Definições de rotas
 │   ├── health.ts   # Rota de verificação de saúde
 │   └── simulations.ts # Rotas de simulações
@@ -95,6 +102,59 @@ http://localhost:3001/documentation
    ```bash
    curl http://localhost:3001/api/simulations/:id
    ```
+## 🗃️ Banco de Dados
+
+### Modelos Principais
+
+#### Simulation
+- `id`: Identificador único
+- `name`: Nome da simulação
+- `startDate`: Data de início
+- `realRate`: Taxa real
+- `status`: Status (Vivo/Morto/Inválido)
+- `baseId`: Referência à simulação base (para versões)
+
+#### Allocation
+- `id`: Identificador único
+- `type`: Tipo (financeira/imobilizada)
+- `name`: Nome da alocação
+- `value`: Valor
+- `startDate`: Data de início (opcional)
+- `installments`: Número de parcelas (opcional)
+- `interestRate`: Taxa de juros (opcional)
+
+#### Movement
+- `id`: Identificador único
+- `type`: Tipo (renda/despesa)
+- `value`: Valor
+- `frequency`: Frequência (única/mensal/anual)
+- `startDate`: Data de início
+- `endDate`: Data de término (opcional)
+
+#### Insurance
+- `id`: Identificador único
+- `name`: Nome do seguro
+- `startDate`: Data de início
+- `durationMonths`: Duração em meses
+- `premium`: Valor do prêmio
+- `insuredValue`: Valor segurado
+
+### Migrações
+
+Para criar uma nova migração após alterações no schema:
+
+```bash
+npx prisma migrate dev --name descricao_da_mudanca
+```
+
+### Prisma Studio
+
+Para visualizar e gerenciar os dados diretamente:
+
+```bash
+npx prisma studio
+```
+
 ## 🧪 Testes
 
 ```bash

@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Simulation {
+  id         Int         @id @default(autoincrement())
+  name       String
+  startDate  DateTime
+  realRate   Float
+  status     String        // e.g., Vivo / Morto / Inválido
+  baseId     Int?          // referência à simulação principal (versões)
+  base       Simulation?   @relation("SimulationVersions", fields: [baseId], references: [id])
+  versions   Simulation[]  @relation("SimulationVersions")
+  allocations Allocation[]
+  movements   Movement[]
+  insurances  Insurance[]
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+}
+
+model Allocation {
+  id           Int          @id @default(autoincrement())
+  simulation   Simulation   @relation(fields: [simulationId], references: [id])
+  simulationId Int
+  type         String       // financeira ou imobilizada
+  name         String
+  value        Float
+  startDate    DateTime?
+  installments Int?
+  interestRate Float?
+  records      AssetRecord[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}
+
+model AssetRecord {
+  id           Int        @id @default(autoincrement())
+  allocation   Allocation @relation(fields: [allocationId], references: [id])
+  allocationId Int
+  date         DateTime
+  value        Float
+  createdAt    DateTime   @default(now())
+}
+
+model Movement {
+  id           Int        @id @default(autoincrement())
+  simulation   Simulation @relation(fields: [simulationId], references: [id])
+  simulationId Int
+  type         String     // e.g., renda ou despesa
+  value        Float
+  frequency    String     // única/mensal/anual
+  startDate    DateTime
+  endDate      DateTime?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+}
+
+model Insurance {
+  id             Int        @id @default(autoincrement())
+  simulation     Simulation @relation(fields: [simulationId], references: [id])
+  simulationId   Int
+  name           String
+  startDate      DateTime
+  durationMonths Int
+  premium        Float
+  insuredValue   Float
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+}
