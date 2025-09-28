@@ -1,0 +1,7 @@
+@'
+[build]
+builder = "nixpacks"
+
+[deployment]
+startCommand = "npm start"
+'@ | Out-File -FilePath .\railway.toml -Encoding utf8

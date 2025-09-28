@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Client {
+  id          Int          @id @default(autoincrement())
+  name        String
+  email       String       @unique
+  phone       String?
+  address     String?
+  isActive    Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  simulations Simulation[]
+}
+
+model Simulation {
+  id          Int          @id @default(autoincrement())
+  name        String
+  startDate   DateTime
+  realRate    Float
+  status      String
+  baseId      Int?
+  clientId    Int
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  description String?
+  allocations Allocation[]
+  insurances  Insurance[]
+  movements   Movement[]
+  client      Client       @relation(fields: [clientId], references: [id])
+  base        Simulation?  @relation("SimulationVersions", fields: [baseId], references: [id])
+  versions    Simulation[] @relation("SimulationVersions")
+}
+
+model Allocation {
+  id           Int           @id @default(autoincrement())
+  simulationId Int
+  type         String
+  name         String
+  value        Float         // Corrigido para corresponder ao banco
+  startDate    DateTime?     // Corrigido para corresponder ao banco
+  installments Int?
+  interestRate Float?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  simulation   Simulation    @relation(fields: [simulationId], references: [id])
+  records      AssetRecord[]
+}
+
+model AssetRecord {
+  id           Int        @id @default(autoincrement())
+  allocationId Int
+  date         DateTime
+  value        Float
+  notes        String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  allocation   Allocation @relation(fields: [allocationId], references: [id])
+}
+
+model Movement {
+  id           Int        @id @default(autoincrement())
+  simulationId Int
+  type         String
+  value        Float      // Corrigido para corresponder ao banco
+  description  String     // Corrigido para corresponder ao banco
+  frequency    String
+  startDate    DateTime
+  endDate      DateTime?
+  category     String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  simulation   Simulation @relation(fields: [simulationId], references: [id])
+}
+
+model Insurance {
+  id             Int        @id @default(autoincrement())
+  simulationId   Int
+  name           String
+  type           String
+  startDate      DateTime
+  durationMonths Int        // Corrigido para corresponder ao banco
+  premium        Float
+  insuredValue   Float
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  simulation     Simulation @relation(fields: [simulationId], references: [id])
+}
