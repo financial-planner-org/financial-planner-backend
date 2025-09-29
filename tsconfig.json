@@ -3,14 +3,11 @@
     "target": "es2020",
     "module": "commonjs",
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src"]
-}
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -30,19 +27,18 @@
       "./node_modules/@types",
       "./src/types"
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "baseUrl": "."
+    }
   },
-  "include": [
-    "src/**/*",
-    "tests/**/*",
-    "jest.config.ts"
-  ],
+  "include": ["src/**/*", "tests/**/*"],
   "exclude": [
     "node_modules",
-    "dist",
-    "**/*.spec.ts"
-  ]
+    "dist"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  }
 }

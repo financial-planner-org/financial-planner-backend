@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="27" failures="27" errors="0" time="201.05">
+  <testsuite name="Allocations API" errors="0" failures="12" skipped="0" timestamp="2025-09-28T15:28:18" time="59.222" tests="12">
+    <testcase classname="Allocations API POST /simulations/:simulationId/allocations deve criar uma nova alocação" name="Allocations API POST /simulations/:simulationId/allocations deve criar uma nova alocação" time="4.145">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API POST /simulations/:simulationId/allocations deve retornar erro 400 para dados inválidos" name="Allocations API POST /simulations/:simulationId/allocations deve retornar erro 400 para dados inválidos" time="4.114">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API GET /allocations/:id deve retornar uma alocação existente" name="Allocations API GET /allocations/:id deve retornar uma alocação existente" time="4.103">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API GET /allocations/:id deve retornar 404 para uma alocação inexistente" name="Allocations API GET /allocations/:id deve retornar 404 para uma alocação inexistente" time="4.096">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API PUT /allocations/:id deve atualizar uma alocação existente" name="Allocations API PUT /allocations/:id deve atualizar uma alocação existente" time="4.068">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API PUT /allocations/:id deve retornar 400 para dados de atualização inválidos" name="Allocations API PUT /allocations/:id deve retornar 400 para dados de atualização inválidos" time="4.097">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API DELETE /allocations/:id deve excluir uma alocação existente" name="Allocations API DELETE /allocations/:id deve excluir uma alocação existente" time="4.105">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API DELETE /allocations/:id deve retornar 404 ao tentar excluir uma alocação inexistente" name="Allocations API DELETE /allocations/:id deve retornar 404 ao tentar excluir uma alocação inexistente" time="4.096">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API POST /allocations/:id/records deve adicionar um registro de valor a uma alocação" name="Allocations API POST /allocations/:id/records deve adicionar um registro de valor a uma alocação" time="4.054">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API POST /allocations/:id/records deve retornar 400 para dados de registro inválidos" name="Allocations API POST /allocations/:id/records deve retornar 400 para dados de registro inválidos" time="4.105">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API GET /allocations/:id/records deve retornar os registros de uma alocação" name="Allocations API GET /allocations/:id/records deve retornar os registros de uma alocação" time="4.111">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Allocations API GET /allocations/:id/records deve retornar um array vazio para uma alocação sem registros" name="Allocations API GET /allocations/:id/records deve retornar um array vazio para uma alocação sem registros" time="4.084">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Simulation Service" errors="0" failures="4" skipped="0" timestamp="2025-09-28T15:29:17" time="43.667" tests="4">
+    <testcase classname="Simulation Service createSimulation deve criar uma simulação com sucesso" name="Simulation Service createSimulation deve criar uma simulação com sucesso" time="8.175">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\core\engines\library\LibraryEngine.ts:440:17)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:9:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:29
+
+  15 
+  16 afterEach(async () =&gt; {
+  17   // Limpar os dados após cada teste
+→ 18   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulation Service createSimulation deve lançar erro se o nome for muito curto" name="Simulation Service createSimulation deve lançar erro se o nome for muito curto" time="8.17">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\core\engines\library\LibraryEngine.ts:440:17)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:9:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:29
+
+  15 
+  16 afterEach(async () =&gt; {
+  17   // Limpar os dados após cada teste
+→ 18   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulation Service getSimulation deve retornar uma simulação existente" name="Simulation Service getSimulation deve retornar uma simulação existente" time="8.182">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\core\engines\library\LibraryEngine.ts:440:17)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:9:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:29
+
+  15 
+  16 afterEach(async () =&gt; {
+  17   // Limpar os dados após cada teste
+→ 18   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulation Service getSimulation deve retornar null para uma simulação inexistente" name="Simulation Service getSimulation deve retornar null para uma simulação inexistente" time="8.125">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\core\engines\library\LibraryEngine.ts:440:17)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:9:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:29
+
+  15 
+  16 afterEach(async () =&gt; {
+  17   // Limpar os dados após cada teste
+→ 18   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\services\simulation.test.ts:18:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Simulations API" errors="0" failures="9" skipped="0" timestamp="2025-09-28T15:30:01" time="81.771" tests="9">
+    <testcase classname="Simulations API POST /simulations deve criar uma nova simulação com sucesso" name="Simulations API POST /simulations deve criar uma nova simulação com sucesso" time="8.172">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API POST /simulations deve retornar erro 400 para dados inválidos" name="Simulations API POST /simulations deve retornar erro 400 para dados inválidos" time="8.172">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations deve listar todas as simulações" name="Simulations API GET /simulations deve listar todas as simulações" time="8.16">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id deve retornar uma simulação existente" name="Simulations API GET /simulations/:id deve retornar uma simulação existente" time="8.166">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id deve atualizar uma simulação existente" name="Simulations API GET /simulations/:id deve atualizar uma simulação existente" time="8.205">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id deve retornar 404 ao tentar atualizar uma simulação inexistente" name="Simulations API GET /simulations/:id deve retornar 404 ao tentar atualizar uma simulação inexistente" time="8.177">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id DELETE /simulations/:id deve excluir uma simulação existente" name="Simulations API GET /simulations/:id DELETE /simulations/:id deve excluir uma simulação existente" time="8.168">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id DELETE /simulations/:id deve retornar 404 ao tentar excluir uma simulação inexistente" name="Simulations API GET /simulations/:id DELETE /simulations/:id deve retornar 404 ao tentar excluir uma simulação inexistente" time="8.195">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Simulations API GET /simulations/:id POST /projections deve calcular uma projeção com base nos parâmetros fornecidos" name="Simulations API GET /simulations/:id POST /projections deve calcular uma projeção com base nos parâmetros fornecidos" time="8.186">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.simulation.deleteMany()` invocation in
+C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:29
+
+  95 // Limpa o banco de dados após cada teste
+  96 afterEach(async () =&gt; {
+  97   // Remove todas as simulações criadas durante os testes
+→ 98   await prisma.simulation.deleteMany(
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\routes\simulations.test.ts:98:5)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Health Check" errors="0" failures="2" skipped="0" timestamp="2025-09-28T15:31:23" time="15.979" tests="2">
+    <testcase classname="Health Check GET /api/health deve retornar 200 OK" name="Health Check GET /api/health deve retornar 200 OK" time="4.107">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+    <testcase classname="Health Check GET /rota-que-nao-existe deve retornar 404" name="Health Check GET /rota-que-nao-existe deve retornar 404" time="4.081">
+      <failure>Error: Command failed: npx prisma migrate deploy
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:35:11)
+    at Promise.then.completed (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusHook (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:281:40)
+    at async _runTestsForDescribeBlock (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:95:7)
+    at async run (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\run.js:71:3)
+    at async runAndTransformResultsToJestFormat (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at async jestAdapter (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at async runTestInternal (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:367:16)
+    at async runTest (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+      <failure>PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can&apos;t reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ei.handleRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async Object.&lt;anonymous&gt; (C:\Desenvolvimento\financial-planner-case\financial-planner-backend\tests\setup.ts:54:20)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
